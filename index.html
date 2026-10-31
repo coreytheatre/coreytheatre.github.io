@@ -3,40 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corey Theatre | Singer-Songwriter & Linguist</title>
+    <title>Corey Theatre | Official EPK & Portfolio</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; background-color: #fafafa; }
-        h1 { color: #111; border-bottom: 3px solid #b32424; padding-bottom: 10px; margin-bottom: 5px; }
-        .subtitle { font-size: 1.2rem; color: #666; font-style: italic; margin-top: 0; margin-bottom: 30px; }
-        h2 { color: #111; margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
-        .links a { display: inline-block; margin-right: 20px; color: #b32424; text-decoration: none; font-weight: bold; }
-        .links a:hover { text-decoration: underline; }
-        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        :root {
+            --bg-color: #122c34;
+            --card-bg: #1a3d47;
+            --text-main: #ffffff;
+            --text-muted: #cbd5e1;
+            --accent: #f59e0b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: var(--accent);
+            font-size: 1.4rem;
+            border-bottom: 1px solid rgba(245, 158, 11, 0.3);
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .social-icons a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .social-icons a:hover {
+            color: var(--accent);
+        }
+        .tagline {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+        .card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .quote-box {
+            border-left: 4px solid var(--accent);
+            padding-left: 20px;
+            font-style: italic;
+            margin: 30px 0;
+            background: rgba(245, 158, 11, 0.05);
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        .quote-author {
+            text-align: right;
+            font-weight: bold;
+            font-style: normal;
+            color: var(--accent);
+            margin-top: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer-links {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer-links a {
+            display: inline-block;
+            margin: 0 15px;
+            font-weight: bold;
+            background: var(--card-bg);
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
     </style>
 </head>
 <body>
 
-    <h1>Corey Theatre</h1>
-    <p class="subtitle">Gunditjmara-Belgian Singer-Songwriter & Linguist</p>
+    <div class="container">
+        <header>
+            <h1>Corey Theatre</h1>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">Facebook</a> | 
+                <a href="https://soundcloud.com" target="_blank">SoundCloud</a>
+            </div>
+        </header>
 
-    <div class="card">
-        <h2>About</h2>
-        <p>Welcome to my official digital hub. I am an acclaimed artist blending roots-blues music with Indigenous language revitalization, alongside my work as a Postdoc Research Fellow at the University of Melbourne. My work focuses on bringing sleeping tongues to life through community song workshops and recordings.</p>
-    </div>
+        <p class="tagline"><strong>Social Media Bio:</strong> Corey Theatre is a singer-songwriter whose compositions combine intricate fingerpicking with storytelling in Gunditjmara, Pitjantjatjara, Kaurna and English.</p>
 
-    <div class="card">
-        <h2>Music & Media</h2>
-        <p>Listen to my album <em>Ngathuk Ngalina</em> and follow my musical journey across global platforms.</p>
-        <div class="links">
-            <a href="https://soundcloud.com" target="_blank">SoundCloud</a>
-            <a href="https://youtube.com" target="_blank">YouTube Music</a>
-            <a href="https://facebook.com" target="_blank">Facebook Music Page</a>
+        <div class="card">
+            <h2>Short Bio</h2>
+            <p>Corey Theatre is a Gunditjmara-Belgian singer-songwriter and fingerstyle guitarist who performs in English and various Aboriginal languages, from fluently spoken Pitjantjatjara to revival languages like Gunditjmara and Kaurna. His eclectic guitar playing draws on British and Scandinavian folk traditions, ragtime and blues. His debut album, <em>Ngathuk Ngalina</em>, saw Theatre exploring music as a medium for reviving the Gunditjmara language and features a title-track duet with Uncle Archie Roach. Corey’s songwriting bridges diverse worldviews; his track "Pang Kayap" blends Christian themes with traditional Kulin creation stories, while "Mikawamangka" uses the Kaurna language to embed observations of Country directly into song. Drawing from his landmark releases and an expanding repertoire of unreleased songs, Corey’s live performances offer a captivating, cross-cultural storytelling experience. His highly acclaimed work has earned him an Australia’s Got Language Talent national win alongside multiple South Australian Music Award nominations.</p>
         </div>
-    </div>
 
-    <div class="card">
-        <h2>Research & Academic Work</h2>
-        <p>For inquiries regarding language reclamation projects, university lectures, or community language workshops, please get in touch via email or my professional profiles.</p>
+        <div class="quote-box">
+            “I like what he’s doing with language, you know, reclaiming language, singing songs in the language”
+            <div class="quote-author">— Archie Roach</div>
+        </div>
+
+        <div class="card">
+            <h2>Workshop: Reviving Language Through Song</h2>
+            <p>As a leading proponent of Gunditjmara language revival and expert in the Aboriginal languages of Victoria, Dr Corey Theatre can deliver workshops discussing the languages and linguistics of Victoria and how he uses music as a medium to revive and preserve Aboriginal languages. The session will draw on yarning methodologies, creating an informal and interactive opportunity to learn about song-craft in the context of language reclamation.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>Recent Performances</h2>
+                <ul>
+                    <li>Dupang Pangari (2026, 2024)</li>
+                    <li>Tarnanthi Festival (2026, 2024)</li>
+                    <li>Rekindled Systems Tour (2023)</li>
+                    <li>Yabaardu Festival (2023)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Live Performances</h2>
+                <ul>
+                    <li><a href="https://youtu.be" target="_blank">Performance Link 1</a></li>
+                    <li><a href="https://youtu.be" target="_blank">Performance Link 2</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="#" target="_blank">Contact</a>
+            <a href="#" target="_blank">Technical Rider & Stage Plan</a>
+        </div>
     </div>
 
 </body>
